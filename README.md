@@ -1,1 +1,1 @@
-# regis
+# Regis - le compagnon du Streamer
