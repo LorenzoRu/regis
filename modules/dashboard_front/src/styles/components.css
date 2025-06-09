@@ -1,0 +1,36 @@
+/* Buttons */
+.button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-primary {
+    background-color: var(--color-accent-primary);
+    color: var(--color-background);
+  }
+  
+  .button-primary:hover {
+    background-color: #38b6e6; 
+  }
+  
+  .button-secondary {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-background);
+  }
+  
+  .button-secondary:hover {
+    background-color: #e6b124; 
+  }
+  
+  /* Card */
+  .card {
+    background-color: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  
