@@ -1,19 +1,19 @@
-import { useEffect, useState } from 'react';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 function App() {
-  const [apiStatus, setApiStatus] = useState('loading...');
-
-  useEffect(() => {
-    fetch('http://localhost:8000/api/ping')
-      .then(response => response.json())
-      .then(data => setApiStatus(data.status))
-  }, []);
-
   return (
-    <div>
-      <h1>Dashboard régis </h1>
-      <p>API status: {apiStatus}</p>
-    </div>
+  <Router>
+
+      <Layout/>
+
+          <Routes>
+            <Route path='/' />
+            <Route path='/obs' />
+            <Route path='/twitch' />
+            <Route path='/settings' />
+          </Routes>
+
+  </Router>
   );
 }
 
